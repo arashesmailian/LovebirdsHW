@@ -1,0 +1,103 @@
+body {
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    margin: 0;
+    font-family: 'Adobe Clean', sans-serif;
+    font-family: 'Adobe Clean Serif', sans-serif;
+    font-family: 'Adobe Clean UX', sans-serif;
+}
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    /*display: grid;*/
+    /*grid-template: 100fr / repeat(2, 50fr);*/
+    /*grid-template-areas: "login-image login-inputs";*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.login-image {
+    width: 50vw;
+    grid-area: login-image;
+    background: url("images/photo_2021-09-17_15-50-31.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    visibility: visible;
+}
+
+.image-texts{
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+    visibility: visible;
+}
+
+.image-texts h4{
+    font-size: 1.6rem;
+    visibility: visible;
+}
+
+.login-side {
+    width: 50vw;
+    grid-area: login-inputs;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 5rem;
+}
+
+.welcome-title {
+    font-size: 2rem;
+    color: #78909C;
+}
+
+
+
+.label-style{
+    color: #A0A0A0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.inputs-style{
+    width: 550px;
+    border:none;
+    border-bottom: 1px solid #A0A0A0;
+    padding:0;
+}
+
+.SignIn-btn{
+    text-align: center;
+}
+
+.SignIn-btn .SignInBtn-container{
+    display: inline-block;
+    background-color: #696969;
+    height: 40px;
+    width: 180px;
+    border-radius: 30px;
+    color: white;
+    padding-top: 7px
+}
+
+.SinIn-divider{
+    text-align: end;
+    display: inline-block;
+    border: .5px solid grey;
+    width: 100px;
+}
+
+.google-signin{
+    display: flex;
+    flex-direction: row;
+}
+
